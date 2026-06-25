@@ -1,0 +1,32 @@
+@use "./animations" as *;
+@use "./colors" as *;
+@use "./typographies" as *;
+
+:root {
+  color: $color-text;
+  background: $color-surface;
+  font-family: $font-family-sans;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-width: 20rem;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: $color-text;
+  background: $color-surface;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  animation: fade-up $duration-fast $easing-standard;
+}

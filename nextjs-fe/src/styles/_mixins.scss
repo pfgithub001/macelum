@@ -1,0 +1,7 @@
+@use "./breakpoints" as *;
+
+@mixin down-tablet {
+  @media (max-width: $breakpoint-tablet) {
+    @content;
+  }
+}
